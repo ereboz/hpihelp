@@ -1,0 +1,576 @@
+//* Created by javaBoxer on 6/01/2017.
+
+/* Developer Notes
+========================================================================== */
+
+//<editor-fold desc="Developer Notes">
+/* ==========================================================================
+Bootstrap LESS variables to reference
+
+@screen-xs             480px;
+@screen-tablet         768px
+@screen-desktop        992px
+@screen-lg-desktop     1200px
+
+.make-xs-column = @screen-xs     =  480px;
+.make-sm-column = @screen-sm-min = 768px;
+.make-md-column = @screen-md-min = 992px;
+.make-lg-column = @screen-lg-min = 1200px;
+
+Custom variables to make using column mixin's possible and keep the DOM
+unpolluted with (col-md-4 col-lg-6, etc.)
+
+@phone-min: ~"(min-width: 480px)";
+@tablet-min: ~"(min-width: 768px)";
+@desktop-min: ~"(min-width: 992px)";
+@desktop-large-min: ~"(min-width: 1200px)";
+
+@phone-max: ~"(max-width: 480px)";
+@tablet-max: ~"(max-width: 768px)";
+@desktop-max: ~"(max-width: 992px)";
+@desktop-large-max: ~"(max-width: 1200px)";
+========================================================================== */
+
+//</editor-fold>
+
+
+/* Variable's
+========================================================================== */
+
+//<editor-fold desc="Variables">
+
+@font-subnav: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+@font-nav: "Myriad Pro", Verdana, sans-serif;
+@font-roboto: "Roboto Condensed",sans-serif;
+@font-secondary: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
+@bg-light-gray: #f5f7f9;
+@black: #000;
+@white: #fff;
+@light-gray: #f5f7f9;
+@light-gray1: #e0e0e0;
+@gray-superlight: #e8e1e1;
+@light-gray2: #d2d2d2;
+@blue: #29ABE2;
+@cadetblue: #668bae;
+@gray-medium: #7b7a7a;
+@powder-blue: rgba(41, 171, 226, 0.06);
+@dark-gray: #333;
+@screen-tablet-md-max: 800px;
+@screen-tablet-md-min: 780px;
+
+@phone-min: ~"(min-width: 480px)";
+@tablet-min: ~"(min-width: 768px)";
+@desktop-min: ~"(min-width: 992px)";
+@desktop-large-min: ~"(min-width: 1200px)";
+
+@phone-max: ~"(max-width: 480px)";
+@tablet-max: ~"(max-width: 768px)";
+@desktop-max: ~"(max-width: 992px)";
+@desktop-large-max: ~"(max-width: 1200px)";
+
+//</editor-fold>
+
+
+/* Mixin'S
+========================================================================== */
+
+//<editor-fold desc="Mixin's">
+.rounded-corners (@radius: 5px) {
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+//</editor-fold>
+
+
+/* Global'S
+========================================================================== */
+
+//<editor-fold desc="Global's">
+
+body {
+    font-family: @font-secondary !important;
+    //font-family: @font-src-sans !important;
+}
+//</editor-fold>
+
+
+/* Header Section
+========================================================================== */
+
+//<editor-fold desc="Header section">
+
+.bg-banner {
+    width: 100%;
+    height: 50px;
+    margin: -5px 0 0 0;
+    background-color: @blue;
+    
+    @media (max-width: @screen-tablet) {
+        display: none;
+    }
+}
+
+.wrapper-banner {
+    margin: 20px 0;
+    font-family: @font-subnav;
+    font-size: 12px;
+    color: @white;
+}
+
+.banner-phone {
+    margin-top: -12px;
+    .phone-icon {
+        margin: 0 10px 0 0;
+    }
+	.banner-phone-text {
+		font-size: 14px;
+		font-weight: bold;
+	}
+    .free-shipping {
+        text-transform: none;
+    }
+}
+
+.banner-message {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 16px;
+}
+
+.chat-message {
+    margin-top: -9px;
+}
+
+.affix {
+    top: 0;
+    width: 100%;
+}
+
+
+#topnavbar {
+
+}
+
+.wrapper-subnav {
+    background-color: @white;
+    height: 100px;
+    //padding-top: 20px;
+
+    .subnavall {
+        //margin-bottom: 40px;
+        background-color: @black;
+        height: 50px;
+    }
+}
+
+.logo {
+    float: left;
+    margin-top: 8px;
+    
+    img {
+        width: 77px;
+        height: 35px;
+    }
+}
+
+.subnav-left {
+    float: left;
+    margin-top: 8px;
+    font-family: @font-roboto !important;
+    font-size: 24px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    color: @white;
+
+    @media (min-width: @screen-sm-min) {
+        font-size: 24px;
+    }
+	
+	span:first-of-type {
+		margin-right: -6px;
+		font-weight: 300;
+	}
+	
+	span:last-of-type {
+		font-weight: 700;
+	}
+
+		a {
+			&:link {
+				color: @white;
+				text-decoration: none;
+			}
+			&:hover {
+				color: @gray-medium;
+			}
+			&:visited {
+				color: @white;
+			}
+			&:active {
+				color: @white;
+			}
+		}
+}
+
+.search-wrapper {
+    margin-top: 7px;
+}
+
+// start server side generated
+.search {
+    .form-control-inline{
+		&.search-box {
+			width: 80%;
+			float: left;
+		}
+	}
+}
+// end server side generated
+
+.subnav-wrapper {
+    height: 30px;
+    color: @white;
+}
+
+.sub-nav {
+    font-size: 12px;
+
+	li {
+		font-family: @font-subnav;
+		a {
+			&:link {
+				color: @white;
+				text-decoration: none;
+			}
+			&:hover {
+				color: @light-gray1;
+				background-color: @black;
+			}
+			&:visited {
+				color: @white;
+			}
+			&:active {
+				color: @white;
+			}
+		}
+	}
+
+    @media (max-width: @screen-tablet) {
+        display: none;
+    }
+
+    @media (min-width: @screen-desktop) {
+        float: right;
+    }
+}
+
+.main-nav {
+    margin-bottom: 0;
+    background-color: @bg-light-gray;
+    margin-left: -15px;
+    margin-right: -15px;
+
+    li {
+        &:hover {
+			background-color: @blue;
+
+			a {
+				color: @white !important;
+            }
+        }
+    }
+}
+
+#myNavbar {
+    ul li {
+        font-family: @font-nav;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}
+
+.banner-text {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: @cadetblue;
+
+    @media (min-width: @screen-tablet) {
+        font-size: 16px;
+    }
+}
+//</editor-fold>
+
+
+/* Main body section
+========================================================================== */
+
+.container-wrapper {
+    width: 100%;
+}
+
+//<editor-fold desc="Main body">
+.main-wrapper {
+    min-height: 600px;
+}
+
+.page-wrapper {
+
+}
+
+// 5 columns on homepage
+.col-hpi {
+    display: block;
+    border: 1px dotted @light-gray2;
+    background-color: @light-gray;
+    padding: 5px;
+    margin: 5px;
+    height: 530px;
+    min-height: 530px;
+    .rounded-corners();
+    
+    @media @tablet-max {
+    
+    }
+    
+    @media @desktop-min {
+    
+    }
+    
+    .make-sm-column(2); // 768px
+    .make-md-column(2); // 992px
+    .make-lg-column(2); // 1200px
+    
+    // offset the first column because the cols are not even num for bs
+    &:first-child {
+        .make-md-column-offset(1);
+    }
+}
+
+
+// Target the ul's only in the column with a class that begins with (wrapper-*)
+.col-hpi [class^="wrapper"] {
+    
+    ul {
+        list-style: none;
+        margin-left: 0;
+        margin-bottom:25px;
+        padding-left: 5px;
+        
+        li {
+            a {
+                &:link {
+                    color: @blue;
+                    text-decoration: none;
+                }
+                &:hover {
+                    color: @gray;
+                }
+                &:visited {
+                    color: @gray;
+                }
+                &:active {
+                    color: @blue;
+                }
+            }
+        }
+        
+        a {
+            color: @white;
+            &:hover {
+                color: @blue;
+            }
+        }
+    }
+}
+
+.topic-heading {
+    border-bottom: 2px solid black;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.topic-sub-heading {
+    border-bottom: 1px dotted gray;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+
+.page-separator {
+    border-bottom: 1px solid @light-gray1;
+    margin-bottom: 40px;
+}
+
+//</editor-fold>
+
+
+/* Footer section
+========================================================================== */
+
+//<editor-fold desc="Footer Section">
+.container-footer {
+	background-color: @dark-gray;
+}
+
+.info-wrapper {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 30px auto;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.info-footer {
+    background: @dark-gray;
+	color: @white;
+    padding: 20px;
+    width: 400px;
+    flex-shrink: 1;
+	flex-basis: auto;
+    font-family: @font-subnav;
+    margin-bottom: 15px;
+
+    h3 {
+        font-size: 18px;
+        margin-top: 0;
+    }
+	
+	ul {
+		list-style: none;
+		margin-left: 10px;
+		margin-bottom:25px;
+		padding-left: 5px;
+		
+		li {
+			a {
+				&:link {
+					color: @white;
+					text-decoration: none;
+				}
+				&:hover {
+					color: @gray-medium;
+				}
+				&:visited {
+					color: @white;
+				}
+				&:active {
+					color: @white;
+				}
+			}
+		}
+		
+		a {
+			color: @white;
+			&:hover {
+				color: @blue;
+			}
+		}
+	}
+
+	.phone {
+		font-family: @font-roboto;
+		font-size: 35px;
+		font-weight: bold;
+	}
+		
+	&.footer1 {
+		.padlock-pros {
+			float: left;
+			
+			.logo {
+				width: 300px;
+			}
+		}
+		.contact {
+			float: left;
+			
+			h1 {
+				font-family: inherit;
+			}
+			
+			span {
+				font-family: inherit;
+			}
+		}
+		.logo-affiliates {
+			float: left;
+			
+			.better-business {
+				margin-left: -20px;
+			}
+			
+			.secure {
+				margin-left: 20px;
+			}
+			
+			.credit-cards {
+				margin-left: -24px;
+			}
+		}
+		
+		.copy {
+			float: left;
+		}
+	}
+	
+	&.footer2 {
+		margin-right: 0;
+		margin-top: 13px;
+		
+		.content-left {
+			float: left;
+			margin-bottom: 20px;
+		}
+		.content-right {
+			float: right;
+			margin-bottom: 20px;
+		}
+		
+		@media (min-width: @screen-lg-desktop) {
+			margin-right: 80px;
+		}
+		
+		@media screen and (max-width: @screen-tablet-md-max) and (min-width: @screen-tablet-md-min) {
+			margin-right: 20px;
+		}
+		
+		.social {
+			float: left;
+			width: 100%;
+			
+			li {
+				&.fa {
+					margin: 0 6px;
+				}
+			}
+		}
+	}
+	
+	&.footer3 {
+		margin-top: 13px;
+		
+		.email-wrapper {
+			p {
+				font-size: 12px;
+			}
+		}
+		//Server side
+		
+		.input-group-addon-captchaimage {
+			padding: 0;
+		}
+		
+		.page-action-bar {
+			margin-bottom: 15px;
+		}
+		
+
+	}
+}
+//</editor-fold>
