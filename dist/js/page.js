@@ -12,30 +12,6 @@ $(document).ready(function(){
     
     $("#topnavbar").height($(".wrapper-subnav").height() + $(".bg-banner").height());
     
-    
-    $('.product-wrapper').each(function () {
-        var salePrice = $(this).find('.sale-price');        // target to center price vertically if no retail price
-        var retailValue = $(this).find('.retail-price');
-        var retailValueText = $(retailValue).text();
-
-        if(retailValueText) {
-            $(this).find('.product-sale').addClass("sale-on");
-        }
-
-        else {
-            $(this).find('.product-sale').addClass("sale-off");
-            $(this).find(salePrice).addClass("saleOnly");       // no retail price, so center price vertically
-        }
-  })
-    
-    // Checkout Page - move the shopping cart section from the bottom of the page to the top
-    // above "Account"
-    
-    var cartDetails = $(".checkout-details .cart-details");
-    var checkoutAccount = $(".checkout-details .checkout-account");
-    $(cartDetails).remove();
-    $(cartDetails).insertBefore(checkoutAccount);
-    
 });
 
 /**
