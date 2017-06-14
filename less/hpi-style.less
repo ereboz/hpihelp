@@ -53,6 +53,8 @@ unpolluted with (col-md-4 col-lg-6, etc.)
 @blue: #29ABE2;
 @cadetblue: #668bae;
 @gray-medium: #7b7a7a;
+@gray-primary: #404040;
+@gray-secondary: #bebebe;
 @powder-blue: rgba(41, 171, 226, 0.06);
 @dark-gray: #333;
 @screen-tablet-md-max: 800px;
@@ -104,9 +106,9 @@ body {
 
 .bg-banner {
     width: 100%;
-    height: 50px;
+    height: 30px;
     margin: -5px 0 0 0;
-    background-color: @blue;
+    background-color: @gray-secondary;
     
     @media (max-width: @screen-tablet) {
         display: none;
@@ -161,18 +163,18 @@ body {
 
     .subnavall {
         //margin-bottom: 40px;
-        background-color: @black;
+        background-color: @gray-primary;
         height: 50px;
     }
 }
 
 .logo {
     float: left;
-    margin-top: 8px;
+    margin-top: 10px;
     
     img {
-        width: 77px;
-        height: 35px;
+        //width: 98px;
+        //height: 45px;
     }
 }
 
@@ -414,7 +416,8 @@ body {
 
 //<editor-fold desc="Footer Section">
 .container-footer {
-	background-color: @dark-gray;
+	background-color: @gray-primary;
+    height: 250px;  // no content so added height to display a box
 }
 
 .info-wrapper {
@@ -427,7 +430,7 @@ body {
 }
 
 .info-footer {
-    background: @dark-gray;
+    background: @gray-primary;
 	color: @white;
     padding: 20px;
     width: 400px;
