@@ -12,7 +12,20 @@ $(document).ready(function(){
     
     $("#topnavbar").height($(".wrapper-subnav").height() + $(".bg-banner").height());
     
+    // quick load header and footer till we implement a package for fed like
+    // webpack, gulp/nunJucks, grunt/require.js, etc.
+    $(".M04-Header").load("header.html");
+    $(".M05-Footer").load("footer.html");
+    
 });
+
+
+
+// $(function(){
+//     $(".M04-Header").load("../../modules/M04-Header/partial.html");
+//     $(".M05-Footer").load("../../modules/M05-Footer/partial.html");
+//
+// });
 
 /**
  * Created by javaBoxer on 5/5/2017.
