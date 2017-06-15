@@ -96,6 +96,11 @@ body {
     font-family: @font-secondary !important;
     //font-family: @font-src-sans !important;
 }
+
+h1, h2, h3, h4, h5 {
+    margin: 0 0 20px 10px;
+}
+
 //</editor-fold>
 
 
@@ -154,7 +159,7 @@ body {
 
 .wrapper-subnav {
     background-color: @white;
-    height: 100px;
+    height: 50px;
     //padding-top: 20px;
 
     .subnavall {
@@ -273,21 +278,31 @@ body {
 //</editor-fold>
 
 
-/* Main body section
+/* Global Main Body Section
 ========================================================================== */
-
+//<editor-fold desc="Main body">
 .container-wrapper {
     width: 100%;
 }
 
-//<editor-fold desc="Main body">
+
 .main-wrapper {
     min-height: 600px;
 }
 
 .page-wrapper {
-
+    margin-top: 0;
+    
+    @media @tablet-min {
+        margin-top: 30px;
+    }
 }
+//</editor-fold>
+
+
+/* Homepage Main Body Section
+========================================================================== */
+//<editor-fold desc="Main body">
 
 // 5 columns on homepage
 .col-hpi {
@@ -377,13 +392,80 @@ body {
 //</editor-fold>
 
 
+
+/* Vendor Section
+========================================================================== */
+
+//<editor-fold desc="Vendor Section">
+
+div[class*="vendor"] {      // look for value (* conatining) value "vendor"
+    
+    // applies to div inside main wrappers
+    .box {
+        border: 1px dotted @light-gray2;
+        padding: 5px;
+        .rounded-corners();
+    }
+}
+
+.page-wrapper {
+    div[class$="wrapper"] {
+        margin-bottom: 20px;
+    }
+}
+
+.vendor-title {
+
+}
+
+.training-wrapper {
+    
+    
+    
+    
+    .make-sm-column(3); // 768px (min)
+    .make-md-column(4); // 992px (min)
+    //.make-lg-column(2); // 1200px (min)
+}
+
+.contact-info-wrapper {
+    
+    
+    
+    
+    
+    .make-sm-column(6); // 768px (min)
+    .make-md-column(5); // 992px (min)
+    //.make-lg-column(2); // 1200px (min)
+}
+
+.resource-links-wrapper {
+    
+    
+    
+    
+    
+    .make-sm-column(3); // 768px (min)
+    .make-md-column(3); // 992px (min)
+    //.make-lg-column(2); // 1200px (min)
+}
+
+
+
+//</editor-fold>
+
+
+
+
+
+
 /* Footer section
 ========================================================================== */
 
 //<editor-fold desc="Footer Section">
 .container-footer {
 	background-color: @gray-primary;
-    height: 250px;  // no content so added height to display a box
+    height: 300px;  // no content so added height to display a box
 }
 
 .info-wrapper {

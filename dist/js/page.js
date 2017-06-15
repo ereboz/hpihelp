@@ -2,6 +2,11 @@
  * Created by javaBoxer on 5/16/2017.
  */
 
+// quick load header and footer till we implement a package for fed like
+// webpack, gulp/nunJucks, grunt/require.js, etc.
+$(".M04-Header").load("header.html");
+$(".M05-Footer").load("footer.html");
+
 $(document).ready(function(){
     
     $(".wrapper-subnav").affix({
@@ -11,11 +16,6 @@ $(document).ready(function(){
     });
     
     $("#topnavbar").height($(".wrapper-subnav").height() + $(".bg-banner").height());
-    
-    // quick load header and footer till we implement a package for fed like
-    // webpack, gulp/nunJucks, grunt/require.js, etc.
-    $(".M04-Header").load("header.html");
-    $(".M05-Footer").load("footer.html");
     
 });
 

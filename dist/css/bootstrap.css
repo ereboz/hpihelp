@@ -6791,6 +6791,13 @@ unpolluted with (col-md-4 col-lg-6, etc.)
 body {
   font-family: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif !important;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0 0 20px 10px;
+}
 /* Header Section
 ========================================================================== */
 .bg-banner {
@@ -6836,7 +6843,7 @@ body {
   width: 100%;
 }
 .wrapper-subnav {
-  height: 100px;
+  height: 50px;
   background-color: #fff;
 }
 .wrapper-subnav .subnavall {
@@ -6933,7 +6940,7 @@ body {
     font-size: 16px;
   }
 }
-/* Main body section
+/* Global Main Body Section
 ========================================================================== */
 .container-wrapper {
   width: 100%;
@@ -6941,6 +6948,16 @@ body {
 .main-wrapper {
   min-height: 600px;
 }
+.page-wrapper {
+  margin-top: 0;
+}
+@media (min-width: 768px) {
+  .page-wrapper {
+    margin-top: 30px;
+  }
+}
+/* Homepage Main Body Section
+========================================================================== */
 .col-hpi {
   position: relative;
   display: block;
@@ -7017,10 +7034,74 @@ body {
   margin-bottom: 40px;
   border-bottom: 1px solid #e0e0e0;
 }
+/* Vendor Section
+========================================================================== */
+div[class*="vendor"] .box {
+  padding: 5px;
+  border: 1px dotted #d2d2d2;
+  border-radius: 5px;
+}
+.page-wrapper div[class$="wrapper"] {
+  margin-bottom: 20px;
+}
+.training-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .training-wrapper {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .training-wrapper {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.contact-info-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .contact-info-wrapper {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  .contact-info-wrapper {
+    float: left;
+    width: 41.66666667%;
+  }
+}
+.resource-links-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .resource-links-wrapper {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .resource-links-wrapper {
+    float: left;
+    width: 25%;
+  }
+}
 /* Footer section
 ========================================================================== */
 .container-footer {
-  height: 250px;
+  height: 300px;
   background-color: #404040;
 }
 .info-wrapper {
