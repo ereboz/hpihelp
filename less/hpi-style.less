@@ -308,21 +308,17 @@ h1, h2, h3, h4, h5 {
 .col-hpi {
     display: block;
     border: 1px dotted @light-gray2;
-    background-color: @light-gray;
     padding: 5px;
-    margin: 5px;
+    margin: 5px 0 20px 10px;
     height: 530px;
     min-height: 530px;
     .rounded-corners();
     
-    @media @tablet-max {
-    
+    @media @tablet-min {
+        margin: 5px;
     }
     
-    @media @desktop-min {
-    
-    }
-    
+    .make-xs-column(12); // 480px
     .make-sm-column(2); // 768px
     .make-md-column(2); // 992px
     .make-lg-column(2); // 1200px
@@ -392,18 +388,22 @@ h1, h2, h3, h4, h5 {
 //</editor-fold>
 
 
-
-/* Vendor Section
+/* ==========================================================================
+Vendor Section
 ========================================================================== */
+
 
 //<editor-fold desc="Vendor Section">
 
-div[class*="vendor"] {      // look for value (* conatining) value "vendor"
+div[class*="vendor"] {      // look for value (* containing) value "vendor"
     
     // applies to div inside main wrappers
     .box {
+        width: 100%;
+        float: left;
         border: 1px dotted @light-gray2;
         padding: 5px;
+        margin-bottom: 20px;
         .rounded-corners();
     }
 }
@@ -418,39 +418,90 @@ div[class*="vendor"] {      // look for value (* conatining) value "vendor"
 
 }
 
+// ************ Training Wrapper ************
 .training-wrapper {
     
-    
-    
-    
-    .make-sm-column(3); // 768px (min)
-    .make-md-column(4); // 992px (min)
-    //.make-lg-column(2); // 1200px (min)
+    .make-sm-column(3);     // 768px (min)
+    .make-md-column(4);     // 992px (min)
+    //.make-lg-column(2);   // 1200px (min)
 }
 
-.contact-info-wrapper {
+// ************ Contact Info Wrapper ************
+.contact-info-wrapper{
+    
+    .account-manager {
     
     
+    }
+    
+    .account-number {
     
     
+    }
     
-    .make-sm-column(6); // 768px (min)
-    .make-md-column(5); // 992px (min)
-    //.make-lg-column(2); // 1200px (min)
+    .cs-line {
+    
+    }
+    
+    .general-cs-line {
+    
+    }
+    
+    .sentry-safe-cs-line {
+    
+    }
+    
+    .address {
+    
+    }
+    
+    .fedex-account {
+    
+    }
+    
+    .make-sm-column(6);     // 768px (min)
+    .make-md-column(5);     // 992px (min)
+    //.make-lg-column(2);   // 1200px (min)
 }
 
+// ************ Resource Links Wrapper ************
 .resource-links-wrapper {
-    
-    
-    
-    
-    
-    .make-sm-column(3); // 768px (min)
-    .make-md-column(3); // 992px (min)
-    //.make-lg-column(2); // 1200px (min)
+    .make-sm-column(3);     // 768px (min)
+    .make-md-column(3);     // 992px (min)
+    //.make-lg-column(2);   // 1200px (min)
 }
 
-
+// ************ Globals for Training, Contact, Resource Links ************
+.training-wrapper, .contact-info-wrapper, .resource-links-wrapper {
+    
+    .training-elements, .contact-elements, .resource-elements {
+        width: 90%;
+        margin: 0 auto;
+    
+        .kv-wrapper {
+            float: left;
+            width: 100%;
+            border-bottom: 1px dotted @gray-superlight;
+        }
+        
+        .key {
+            float: left;
+            width: 50%;
+            text-align: left;
+            
+            span {
+                font-weight: bold;
+            }
+        }
+        
+        .value {
+            float: left;
+            width: 50%;
+            text-align: right;
+        }
+        
+    }
+}
 
 //</editor-fold>
 
