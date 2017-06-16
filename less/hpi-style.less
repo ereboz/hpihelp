@@ -39,24 +39,17 @@ unpolluted with (col-md-4 col-lg-6, etc.)
 
 //<editor-fold desc="Variables">
 
-@font-subnav: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
-@font-nav: "Myriad Pro", Verdana, sans-serif;
-@font-roboto: "Roboto Condensed",sans-serif;
-@font-secondary: "Bitter Regular", "Segoe UI", "Trebuchet MS", Verdana, sans-serif;
-@bg-light-gray: #f5f7f9;
+@font-roboto: "Roboto Condensed", sans-serif;
+@font-opensans: "Open Sans",sans-serif;
+
 @black: #000;
 @white: #fff;
-@light-gray: #f5f7f9;
-@light-gray1: #e0e0e0;
-@gray-superlight: #e8e1e1;
-@light-gray2: #d2d2d2;
-@blue: #29ABE2;
-@cadetblue: #668bae;
-@gray-medium: #7b7a7a;
-@gray-primary: #404040;
-@gray-secondary: #bebebe;
+
+@gray-light: #bebebe;
+@gray-medium: #a2a2a2;
+@gray-dark: #404040;
 @powder-blue: rgba(41, 171, 226, 0.06);
-@dark-gray: #333;
+
 @screen-tablet-md-max: 800px;
 @screen-tablet-md-min: 780px;
 
@@ -92,13 +85,34 @@ unpolluted with (col-md-4 col-lg-6, etc.)
 
 //<editor-fold desc="Global's">
 
+* {
+    font-family: @font-roboto;
+}
 body {
-    font-family: @font-secondary !important;
+    font-family: @font-roboto;
     //font-family: @font-src-sans !important;
 }
 
 h1, h2, h3, h4, h5 {
     margin: 0 0 20px 10px;
+    color: @gray-dark;
+    font-weight: 700;
+}
+
+a {
+    &:link {
+        color: @gray-dark;
+        text-decoration: none;
+    }
+    &:hover {
+        color: @gray-light;
+    }
+    &:visited {
+        color: @gray-light;
+    }
+    &:active {
+        color: @gray-dark;
+    }
 }
 
 //</editor-fold>
@@ -113,7 +127,7 @@ h1, h2, h3, h4, h5 {
     width: 100%;
     height: 30px;
     margin: -5px 0 0 0;
-    background-color: @gray-secondary;
+    background-color: @gray-light;
     
     @media (max-width: @screen-tablet) {
         display: none;
@@ -122,7 +136,6 @@ h1, h2, h3, h4, h5 {
 
 .wrapper-banner {
     margin: 20px 0;
-    font-family: @font-subnav;
     font-size: 12px;
     color: @white;
 }
@@ -164,7 +177,7 @@ h1, h2, h3, h4, h5 {
 
     .subnavall {
         //margin-bottom: 40px;
-        background-color: @gray-primary;
+        background-color: @gray-dark;
         height: 50px;
     }
 }
@@ -177,7 +190,6 @@ h1, h2, h3, h4, h5 {
 .subnav-left {
     float: left;
     margin-top: 8px;
-    font-family: @font-roboto !important;
     font-size: 24px;
     margin-left: 5px;
     text-transform: uppercase;
@@ -202,7 +214,7 @@ h1, h2, h3, h4, h5 {
 				text-decoration: none;
 			}
 			&:hover {
-				color: @gray-medium;
+				color: @gray-dark;
 			}
 			&:visited {
 				color: @white;
@@ -237,14 +249,14 @@ h1, h2, h3, h4, h5 {
     font-size: 12px;
 
 	li {
-		font-family: @font-subnav;
+
 		a {
 			&:link {
 				color: @white;
 				text-decoration: none;
 			}
 			&:hover {
-				color: @light-gray1;
+				color: @gray-light;
 				background-color: @black;
 			}
 			&:visited {
@@ -269,7 +281,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 10px;
     text-align: center;
     font-size: 12px;
-    color: @cadetblue;
+    color: @white;
 
     @media (min-width: @screen-tablet) {
         font-size: 16px;
@@ -307,7 +319,7 @@ h1, h2, h3, h4, h5 {
 // 5 columns on homepage
 .col-hpi {
     display: block;
-    border: 1px dotted @light-gray2;
+    border: 1px dotted @gray-light;
     padding: 5px;
     margin: 5px 0 20px 10px;
     height: 530px;
@@ -340,19 +352,20 @@ h1, h2, h3, h4, h5 {
         padding-left: 5px;
         
         li {
+            margin-bottom: 5px;
             a {
                 &:link {
-                    color: @blue;
+                    color: @gray-dark;
                     text-decoration: none;
                 }
                 &:hover {
-                    color: @gray;
+                    color: @gray-light;
                 }
                 &:visited {
-                    color: @gray;
+                    color: @gray-dark;
                 }
                 &:active {
-                    color: @blue;
+                    color: @gray-dark;
                 }
             }
         }
@@ -360,7 +373,7 @@ h1, h2, h3, h4, h5 {
         a {
             color: @white;
             &:hover {
-                color: @blue;
+                color: @gray-dark;
             }
         }
     }
@@ -373,7 +386,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .topic-sub-heading {
-    border-bottom: 1px dotted gray;
+    border-bottom: 1px dotted @gray-light;
     font-size: 20px;
     margin-bottom: 20px;
 }
@@ -381,7 +394,7 @@ h1, h2, h3, h4, h5 {
 
 
 .page-separator {
-    border-bottom: 1px solid @light-gray1;
+    border-bottom: 1px solid @gray-light;
     margin-bottom: 40px;
 }
 
@@ -401,14 +414,23 @@ div[class*="vendor"] {      // look for value (* containing) value "vendor"
     .box {
         width: 100%;
         float: left;
-        border: 1px dotted @light-gray2;
-        padding: 5px;
+        border: 1px dotted @gray-light;
+        padding: 10px;
         margin-bottom: 20px;
         .rounded-corners();
+        color: darken(@gray-medium, 20%);
+        
+        h1, h2, h3, h4, h5 {
+            margin-left: 0;
+        }
+        
+        @media @desktop-min {
+            min-height: 400px;
+        }
     }
 }
 
-.page-wrapper {
+.page-wrapper {             // look for value ending in wrapper
     div[class$="wrapper"] {
         margin-bottom: 20px;
     }
@@ -421,8 +443,8 @@ div[class*="vendor"] {      // look for value (* containing) value "vendor"
 // ************ Training Wrapper ************
 .training-wrapper {
     
-    .make-sm-column(3);     // 768px (min)
-    .make-md-column(4);     // 992px (min)
+    .make-sm-column(5);     // 768px (min)
+    .make-md-column(5);     // 992px (min)
     //.make-lg-column(2);   // 1200px (min)
 }
 
@@ -459,8 +481,8 @@ div[class*="vendor"] {      // look for value (* containing) value "vendor"
     
     }
     
-    .make-sm-column(6);     // 768px (min)
-    .make-md-column(5);     // 992px (min)
+    .make-sm-column(4);     // 768px (min)
+    .make-md-column(4);     // 992px (min)
     //.make-lg-column(2);   // 1200px (min)
 }
 
@@ -474,19 +496,25 @@ div[class*="vendor"] {      // look for value (* containing) value "vendor"
 // ************ Globals for Training, Contact, Resource Links ************
 .training-wrapper, .contact-info-wrapper, .resource-links-wrapper {
     
+    @media @desktop-min {
+        min-height: 400px;
+    }
+    
     .training-elements, .contact-elements, .resource-elements {
-        width: 90%;
+        width: 100%;
         margin: 0 auto;
+        float: left;
+        padding: 10px;
     
         .kv-wrapper {
             float: left;
             width: 100%;
-            border-bottom: 1px dotted @gray-superlight;
+            border-bottom: 1px dotted lighten(@gray-light, 10%);
         }
         
         .key {
             float: left;
-            width: 50%;
+            width: 40%;
             text-align: left;
             
             span {
@@ -496,7 +524,7 @@ div[class*="vendor"] {      // look for value (* containing) value "vendor"
         
         .value {
             float: left;
-            width: 50%;
+            width: 60%;
             text-align: right;
         }
         
@@ -515,7 +543,7 @@ div[class*="vendor"] {      // look for value (* containing) value "vendor"
 
 //<editor-fold desc="Footer Section">
 .container-footer {
-	background-color: @gray-primary;
+	background-color: @gray-dark;
     height: 300px;  // no content so added height to display a box
 }
 
@@ -529,13 +557,12 @@ div[class*="vendor"] {      // look for value (* containing) value "vendor"
 }
 
 .info-footer {
-    background: @gray-primary;
+    background: @gray-dark;
 	color: @white;
     padding: 20px;
     width: 400px;
     flex-shrink: 1;
 	flex-basis: auto;
-    font-family: @font-subnav;
     margin-bottom: 15px;
 
     h3 {
@@ -556,7 +583,7 @@ div[class*="vendor"] {      // look for value (* containing) value "vendor"
 					text-decoration: none;
 				}
 				&:hover {
-					color: @gray-medium;
+					color: @gray-dark;
 				}
 				&:visited {
 					color: @white;
@@ -570,13 +597,12 @@ div[class*="vendor"] {      // look for value (* containing) value "vendor"
 		a {
 			color: @white;
 			&:hover {
-				color: @blue;
+				color: @powder-blue;
 			}
 		}
 	}
 
 	.phone {
-		font-family: @font-roboto;
 		font-size: 35px;
 		font-weight: bold;
 	}

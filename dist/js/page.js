@@ -4,8 +4,10 @@
 
 // quick load header and footer till we implement a package for fed like
 // webpack, gulp/nunJucks, grunt/require.js, etc.
-$(".M04-Header").load("header.html");
-$(".M05-Footer").load("footer.html");
+$(function(){
+    $(".M04-Header").load("header.html");
+    $(".M05-Footer").load("footer.html");
+});
 
 $(document).ready(function(){
     
