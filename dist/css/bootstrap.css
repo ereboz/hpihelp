@@ -7190,7 +7190,7 @@ div[class*="vendor"] .box h5 {
 .contact-info-wrapper .resource-elements .key,
 .resource-links-wrapper .resource-elements .key {
   float: left;
-  width: 40%;
+  width: 60%;
   text-align: left;
 }
 .training-wrapper .training-elements .value,
@@ -7203,7 +7203,7 @@ div[class*="vendor"] .box h5 {
 .contact-info-wrapper .resource-elements .value,
 .resource-links-wrapper .resource-elements .value {
   float: left;
-  width: 60%;
+  width: 40%;
   text-align: right;
 }
 /* Footer section
