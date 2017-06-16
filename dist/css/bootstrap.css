@@ -6975,7 +6975,7 @@ a:active {
   position: relative;
   display: block;
   float: left;
-  width: 100%;
+  width: 91.66666667%;
   height: 530px;
   min-height: 530px;
   min-height: 1px;
@@ -6997,19 +6997,7 @@ a:active {
     width: 16.66666667%;
   }
 }
-@media (min-width: 992px) {
-  .col-hpi {
-    float: left;
-    width: 16.66666667%;
-  }
-}
-@media (min-width: 1200px) {
-  .col-hpi {
-    float: left;
-    width: 16.66666667%;
-  }
-}
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .col-hpi:first-child {
     margin-left: 8.33333333%;
   }
@@ -7064,6 +7052,7 @@ div[class*="vendor"] .box {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
+  overflow: hidden;
   color: #6f6f6f;
   border: 1px dotted #bebebe;
   border-radius: 5px;
@@ -7179,21 +7168,30 @@ div[class*="vendor"] .box h5 {
 .resource-links-wrapper .contact-elements .key,
 .training-wrapper .resource-elements .key,
 .contact-info-wrapper .resource-elements .key,
+.resource-links-wrapper .resource-elements .key,
+.training-wrapper .training-elements .value,
+.contact-info-wrapper .training-elements .value,
+.resource-links-wrapper .training-elements .value,
+.training-wrapper .contact-elements .value,
+.contact-info-wrapper .contact-elements .value,
+.resource-links-wrapper .contact-elements .value,
+.training-wrapper .resource-elements .value,
+.contact-info-wrapper .resource-elements .value,
+.resource-links-wrapper .resource-elements .value {
+  font-size: 12px;
+}
+.training-wrapper .training-elements .key,
+.contact-info-wrapper .training-elements .key,
+.resource-links-wrapper .training-elements .key,
+.training-wrapper .contact-elements .key,
+.contact-info-wrapper .contact-elements .key,
+.resource-links-wrapper .contact-elements .key,
+.training-wrapper .resource-elements .key,
+.contact-info-wrapper .resource-elements .key,
 .resource-links-wrapper .resource-elements .key {
   float: left;
   width: 40%;
   text-align: left;
-}
-.training-wrapper .training-elements .key span,
-.contact-info-wrapper .training-elements .key span,
-.resource-links-wrapper .training-elements .key span,
-.training-wrapper .contact-elements .key span,
-.contact-info-wrapper .contact-elements .key span,
-.resource-links-wrapper .contact-elements .key span,
-.training-wrapper .resource-elements .key span,
-.contact-info-wrapper .resource-elements .key span,
-.resource-links-wrapper .resource-elements .key span {
-  font-weight: bold;
 }
 .training-wrapper .training-elements .value,
 .contact-info-wrapper .training-elements .value,
