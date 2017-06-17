@@ -7009,6 +7009,7 @@ div[class*="vendor"] .box {
   margin-bottom: 20px;
   overflow: hidden;
   color: #6f6f6f;
+  background-color: #fbfbfb;
   border: 1px dotted #bebebe;
   border-radius: 5px;
 }
