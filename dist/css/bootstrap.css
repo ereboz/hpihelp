@@ -6816,7 +6816,8 @@ a:visited {
 a:active {
   color: #404040;
 }
-/* Header Section
+/* ==========================================================================
+****** Header Section ******
 ========================================================================== */
 .bg-banner {
   width: 100%;
@@ -6896,7 +6897,7 @@ a:active {
   text-decoration: none;
 }
 .subnav-left a:hover {
-  color: #404040;
+  color: #bebebe;
 }
 .subnav-left a:visited {
   color: #fff;
@@ -6907,57 +6908,11 @@ a:active {
 .search-wrapper {
   margin-top: 7px;
 }
-.search .form-control-inline.search-box {
-  float: left;
-  width: 80%;
-}
 .subnav-wrapper {
   height: 30px;
-  color: #fff;
-}
-.sub-nav {
-  font-size: 12px;
-}
-.sub-nav li a:link {
-  color: #fff;
-  text-decoration: none;
-}
-.sub-nav li a:hover {
-  color: #bebebe;
-  background-color: #000;
-}
-.sub-nav li a:visited {
-  color: #fff;
-}
-.sub-nav li a:active {
-  color: #fff;
-}
-@media (max-width: 768px) {
-  .sub-nav {
-    display: none;
-  }
-}
-@media (min-width: 992px) {
-  .sub-nav {
-    float: right;
-  }
-}
-.banner-text {
-  margin-bottom: 10px;
-  font-size: 12px;
-  color: #fff;
-  text-align: center;
-}
-@media (min-width: 768px) {
-  .banner-text {
-    font-size: 16px;
-  }
 }
 /* Global Main Body Section
 ========================================================================== */
-.container-wrapper {
-  width: 100%;
-}
 .main-wrapper {
   min-height: 600px;
 }
@@ -7045,7 +7000,7 @@ a:active {
   border-bottom: 1px solid #bebebe;
 }
 /* ==========================================================================
-Vendor Section
+****** Vendor Section ******
 ========================================================================== */
 div[class*="vendor"] .box {
   float: left;
@@ -7158,6 +7113,7 @@ div[class*="vendor"] .box h5 {
 .resource-links-wrapper .resource-elements .kv-wrapper {
   float: left;
   width: 100%;
+  margin-left: 10px;
   border-bottom: 1px dotted #d8d8d8;
 }
 .training-wrapper .training-elements .key,
@@ -7206,7 +7162,8 @@ div[class*="vendor"] .box h5 {
   width: 40%;
   text-align: right;
 }
-/* Footer section
+/* ==========================================================================
+****** Footer Section ******
 ========================================================================== */
 .container-footer {
   height: 300px;

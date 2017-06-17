@@ -9,17 +9,17 @@ $(function(){
     $(".M05-Footer").load("footer.html");
 });
 
-$(document).ready(function(){
-    
-    $(".wrapper-subnav").affix({
-        offset: {
-            top: $('.bg-banner').height()
-        }
-    });
-    
-    $("#topnavbar").height($(".wrapper-subnav").height() + $(".bg-banner").height());
-    
-});
+// $(document).ready(function(){
+//
+//     $(".wrapper-subnav").affix({
+//         offset: {
+//             top: $('.bg-banner').height()
+//         }
+//     });
+//
+//     $("#topnavbar").height($(".wrapper-subnav").height() + $(".bg-banner").height());
+//
+// });
 
 
 

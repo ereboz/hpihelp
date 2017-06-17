@@ -1,4 +1,4 @@
-//* Created by javaBoxer on 6/01/2017.
+//* Created by javaBoxer on 6/12/2017.
 
 /* Developer Notes
 ========================================================================== */
@@ -118,7 +118,8 @@ a {
 //</editor-fold>
 
 
-/* Header Section
+/* ==========================================================================
+****** Header Section ******
 ========================================================================== */
 
 //<editor-fold desc="Header section">
@@ -214,7 +215,7 @@ a {
 				text-decoration: none;
 			}
 			&:hover {
-				color: @gray-dark;
+				color: @gray-light;
 			}
 			&:visited {
 				color: @white;
@@ -229,73 +230,17 @@ a {
     margin-top: 7px;
 }
 
-// start server side generated
-.search {
-    .form-control-inline{
-		&.search-box {
-			width: 80%;
-			float: left;
-		}
-	}
-}
-// end server side generated
-
 .subnav-wrapper {
     height: 30px;
-    color: @white;
 }
 
-.sub-nav {
-    font-size: 12px;
-
-	li {
-
-		a {
-			&:link {
-				color: @white;
-				text-decoration: none;
-			}
-			&:hover {
-				color: @gray-light;
-				background-color: @black;
-			}
-			&:visited {
-				color: @white;
-			}
-			&:active {
-				color: @white;
-			}
-		}
-	}
-
-    @media (max-width: @screen-tablet) {
-        display: none;
-    }
-
-    @media (min-width: @screen-desktop) {
-        float: right;
-    }
-}
-
-.banner-text {
-    margin-bottom: 10px;
-    text-align: center;
-    font-size: 12px;
-    color: @white;
-
-    @media (min-width: @screen-tablet) {
-        font-size: 16px;
-    }
-}
 //</editor-fold>
 
 
 /* Global Main Body Section
 ========================================================================== */
-//<editor-fold desc="Main body">
-.container-wrapper {
-    width: 100%;
-}
+//<editor-fold desc="Main body globals">
+
 
 
 .main-wrapper {
@@ -314,7 +259,8 @@ a {
 
 /* Homepage Main Body Section
 ========================================================================== */
-//<editor-fold desc="Main body">
+
+//<editor-fold desc="Homepage main body">
 
 // 5 columns on homepage
 .col-hpi {
@@ -391,8 +337,6 @@ a {
     margin-bottom: 20px;
 }
 
-
-
 .page-separator {
     border-bottom: 1px solid @gray-light;
     margin-bottom: 40px;
@@ -402,13 +346,14 @@ a {
 
 
 /* ==========================================================================
-Vendor Section
+****** Vendor Section ******
 ========================================================================== */
-
 
 //<editor-fold desc="Vendor Section">
 
-div[class*="vendor"] {      // look for value (* containing) value "vendor"
+// look for class with "vendor" anywhere inside, then a "box" to style.
+// the 3 main sections: training, contact-info, resource-links
+div[class*="vendor"] {
     
     // applies to div inside main wrappers
     .box {
@@ -431,17 +376,15 @@ div[class*="vendor"] {      // look for value (* containing) value "vendor"
     }
 }
 
-.page-wrapper {             // look for value ending in wrapper
+// look for value ending in wrapper inside page-wrapper (this page)
+// each main section and key-value pair wrappers
+.page-wrapper {
     div[class$="wrapper"] {
         margin-bottom: 20px;
     }
 }
 
-.vendor-title {
-
-}
-
-// ************ Training Wrapper ************
+// ************ Training Wrapper Columns ************
 .training-wrapper {
     
     .make-sm-column(5);     // 768px (min)
@@ -449,7 +392,7 @@ div[class*="vendor"] {      // look for value (* containing) value "vendor"
     //.make-lg-column(2);   // 1200px (min)
 }
 
-// ************ Contact Info Wrapper ************
+// ************ Contact Info Wrapper Columns ************
 .contact-info-wrapper{
     
     .make-sm-column(4);     // 768px (min)
@@ -457,7 +400,7 @@ div[class*="vendor"] {      // look for value (* containing) value "vendor"
     //.make-lg-column(2);   // 1200px (min)
 }
 
-// ************ Resource Links Wrapper ************
+// ************ Resource Links Wrapper Columns ************
 .resource-links-wrapper {
     .make-sm-column(3);     // 768px (min)
     .make-md-column(3);     // 992px (min)
@@ -480,6 +423,7 @@ div[class*="vendor"] {      // look for value (* containing) value "vendor"
         .kv-wrapper {
             float: left;
             width: 100%;
+            margin-left: 10px;
             border-bottom: 1px dotted lighten(@gray-light, 10%);
         }
         
@@ -509,11 +453,8 @@ div[class*="vendor"] {      // look for value (* containing) value "vendor"
 //</editor-fold>
 
 
-
-
-
-
-/* Footer section
+/* ==========================================================================
+****** Footer Section ******
 ========================================================================== */
 
 //<editor-fold desc="Footer Section">
