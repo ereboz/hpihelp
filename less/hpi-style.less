@@ -351,9 +351,10 @@ a {
 
 //<editor-fold desc="Vendor Section">
 
-// look for class with "vendor" anywhere inside, then a "box" to style.
+// look for .page-wrapper and a class with "vendor" in the page wrapper
+// then a "box" to style.
 // the 3 main sections: training, contact-info, resource-links
-div[class*="vendor"] {
+.page-wrapper[class*="vendor"] {
     
     // applies to div inside main wrappers
     .box {
@@ -453,6 +454,109 @@ div[class*="vendor"] {
 
 //</editor-fold>
 
+/* ==========================================================================
+****** Shipping Section ******
+========================================================================== */
+
+//<editor-fold desc="Vendor Section">
+
+// look for .page-wrapper and a class with "shipping" in the page wrapper
+// then a "box" to style.
+// the 3 main sections: training, contact-info, resource-links
+.page-wrapper[class*="shipping"] {
+    
+    // applies to div inside main wrappers
+    .box {
+        width: 100%;
+        float: left;
+        border: 1px dotted @gray-light;
+        padding: 10px;
+        margin-bottom: 20px;
+        color: darken(@gray-medium, 20%);
+        background-color: lighten(@gray-light, 24%);
+        overflow: hidden;
+        .rounded-corners();
+        
+        h1, h2, h3, h4, h5 {
+            margin-left: 0;
+        }
+        
+        @media @desktop-min {
+            min-height: 400px;
+        }
+    }
+}
+
+// look for value ending in wrapper inside page-wrapper (this page)
+// each main section and key-value pair wrappers will get this margin
+.page-wrapper {
+    div[class$="wrapper"] {
+        margin-bottom: 20px;
+    }
+}
+
+// ************ Training Wrapper Columns ************
+.shipping-wrapper {
+    
+    .make-sm-column(8);     // 768px (min)
+    .make-md-column(8);     // 992px (min)
+    //.make-lg-column(2);   // 1200px (min)
+}
+
+// ************ Contact Info Wrapper Columns ************
+.shipping-account-info-wrapper{
+    
+    .make-sm-column(4);     // 768px (min)
+    .make-md-column(4);     // 992px (min)
+    //.make-lg-column(2);   // 1200px (min)
+}
+
+
+
+// ************ Globals for Training, Contact, Resource Links ************
+.shipping-wrapper, .shipping-account-info-wrapper {
+    
+    @media @desktop-min {
+        min-height: 400px;
+    }
+    
+    .shipping-elements, .shipping-account-elements {
+        width: 100%;
+        margin: 0 auto;
+        float: left;
+        padding: 10px;
+        
+        .kv-wrapper {
+            float: left;
+            width: 100%;
+            margin-left: 10px;
+            border-bottom: 1px dotted lighten(@gray-light, 10%);
+        }
+        
+        .key, .value {
+            font-size: 12px;
+        }
+        
+        .key {
+            float: left;
+            width: 60%;
+            text-align: left;
+            
+            span {
+            
+            }
+        }
+        
+        .value {
+            float: left;
+            width: 40%;
+            text-align: right;
+        }
+        
+    }
+}
+
+//</editor-fold>
 
 /* ==========================================================================
 ****** Footer Section ******

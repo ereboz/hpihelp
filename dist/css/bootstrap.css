@@ -7002,7 +7002,7 @@ a:active {
 /* ==========================================================================
 ****** Vendor Section ******
 ========================================================================== */
-div[class*="vendor"] .box {
+.page-wrapper[class*="vendor"] .box {
   float: left;
   width: 100%;
   padding: 10px;
@@ -7013,15 +7013,15 @@ div[class*="vendor"] .box {
   border: 1px dotted #bebebe;
   border-radius: 5px;
 }
-div[class*="vendor"] .box h1,
-div[class*="vendor"] .box h2,
-div[class*="vendor"] .box h3,
-div[class*="vendor"] .box h4,
-div[class*="vendor"] .box h5 {
+.page-wrapper[class*="vendor"] .box h1,
+.page-wrapper[class*="vendor"] .box h2,
+.page-wrapper[class*="vendor"] .box h3,
+.page-wrapper[class*="vendor"] .box h4,
+.page-wrapper[class*="vendor"] .box h5 {
   margin-left: 0;
 }
 @media (min-width: 992px) {
-  div[class*="vendor"] .box {
+  .page-wrapper[class*="vendor"] .box {
     min-height: 400px;
   }
 }
@@ -7159,6 +7159,121 @@ div[class*="vendor"] .box h5 {
 .training-wrapper .resource-elements .value,
 .contact-info-wrapper .resource-elements .value,
 .resource-links-wrapper .resource-elements .value {
+  float: left;
+  width: 40%;
+  text-align: right;
+}
+/* ==========================================================================
+****** Shipping Section ******
+========================================================================== */
+.page-wrapper[class*="shipping"] .box {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  color: #6f6f6f;
+  background-color: #fbfbfb;
+  border: 1px dotted #bebebe;
+  border-radius: 5px;
+}
+.page-wrapper[class*="shipping"] .box h1,
+.page-wrapper[class*="shipping"] .box h2,
+.page-wrapper[class*="shipping"] .box h3,
+.page-wrapper[class*="shipping"] .box h4,
+.page-wrapper[class*="shipping"] .box h5 {
+  margin-left: 0;
+}
+@media (min-width: 992px) {
+  .page-wrapper[class*="shipping"] .box {
+    min-height: 400px;
+  }
+}
+.page-wrapper div[class$="wrapper"] {
+  margin-bottom: 20px;
+}
+.shipping-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .shipping-wrapper {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .shipping-wrapper {
+    float: left;
+    width: 66.66666667%;
+  }
+}
+.shipping-account-info-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .shipping-account-info-wrapper {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .shipping-account-info-wrapper {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .shipping-wrapper,
+  .shipping-account-info-wrapper {
+    min-height: 400px;
+  }
+}
+.shipping-wrapper .shipping-elements,
+.shipping-account-info-wrapper .shipping-elements,
+.shipping-wrapper .shipping-account-elements,
+.shipping-account-info-wrapper .shipping-account-elements {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+}
+.shipping-wrapper .shipping-elements .kv-wrapper,
+.shipping-account-info-wrapper .shipping-elements .kv-wrapper,
+.shipping-wrapper .shipping-account-elements .kv-wrapper,
+.shipping-account-info-wrapper .shipping-account-elements .kv-wrapper {
+  float: left;
+  width: 100%;
+  margin-left: 10px;
+  border-bottom: 1px dotted #d8d8d8;
+}
+.shipping-wrapper .shipping-elements .key,
+.shipping-account-info-wrapper .shipping-elements .key,
+.shipping-wrapper .shipping-account-elements .key,
+.shipping-account-info-wrapper .shipping-account-elements .key,
+.shipping-wrapper .shipping-elements .value,
+.shipping-account-info-wrapper .shipping-elements .value,
+.shipping-wrapper .shipping-account-elements .value,
+.shipping-account-info-wrapper .shipping-account-elements .value {
+  font-size: 12px;
+}
+.shipping-wrapper .shipping-elements .key,
+.shipping-account-info-wrapper .shipping-elements .key,
+.shipping-wrapper .shipping-account-elements .key,
+.shipping-account-info-wrapper .shipping-account-elements .key {
+  float: left;
+  width: 60%;
+  text-align: left;
+}
+.shipping-wrapper .shipping-elements .value,
+.shipping-account-info-wrapper .shipping-elements .value,
+.shipping-wrapper .shipping-account-elements .value,
+.shipping-account-info-wrapper .shipping-account-elements .value {
   float: left;
   width: 40%;
   text-align: right;
