@@ -1,0 +1,51 @@
+<?xml version="1.0" standalone="yes"?>
+<Products>
+  <Products>
+    <Name>BarLok Box</Name>
+    <Length>9</Length>
+    <Width>8</Width>
+    <Height>6</Height>
+    <Weight />
+    <DV />
+  </Products>
+  <Products>
+    <Name>Caster Box</Name>
+    <Length>12</Length>
+    <Width>10</Width>
+    <Height>8</Height>
+    <Weight />
+    <DV />
+  </Products>
+  <Products>
+    <Name>Extra Large Box</Name>
+    <Length>18</Length>
+    <Width>12</Width>
+    <Height>10</Height>
+    <Weight />
+    <DV />
+  </Products>
+  <Products>
+    <Name>Large Box</Name>
+    <Length>12</Length>
+    <Width>10</Width>
+    <Height>8</Height>
+    <Weight />
+    <DV />
+  </Products>
+  <Products>
+    <Name>Medium Box</Name>
+    <Length>11</Length>
+    <Width>8</Width>
+    <Height>6</Height>
+    <Weight />
+    <DV />
+  </Products>
+  <Products>
+    <Name>Small Box</Name>
+    <Length>8</Length>
+    <Width>6</Width>
+    <Height>4</Height>
+    <Weight />
+    <DV />
+  </Products>
+</Products>

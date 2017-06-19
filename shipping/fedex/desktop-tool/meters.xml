@@ -1,0 +1,31 @@
+﻿<Meters xmlns="http://tempuri.org/Sender.xsd">
+    <Meters>
+        <BillingAddress1>1410 Hill St.</BillingAddress1>
+        <BillingAddress2 />
+        <BillingCity>El Cajon</BillingCity>
+        <BillingState>CA</BillingState>
+        <BillingZip>92020</BillingZip>
+        <Meter>z6HfZ18my2Bp60z75frVsQ==</Meter>
+        <Key>wx2yZUofLnmUyQATB1FiWqm054ej17S4</Key>
+        <Password>hHguXDHZXS10E7LDS5RDT22UeQGCXaiP+od1uet9WdY=</Password>
+        <SPODAccount />
+        <LTLAccount />
+        <SubscriberLocationID>Warehouse Manager</SubscriberLocationID>
+        <SubscriberContact>Taylor Harris</SubscriberContact>
+        <SubscriberCompany>Hodge Products Inc.</SubscriberCompany>
+        <SubscriberAddress1>9316 Wheatlands Rd.</SubscriberAddress1>
+        <SubscriberAddress2>Building C</SubscriberAddress2>
+        <SubscriberCity>Santee</SubscriberCity>
+        <SubscriberState>CA</SubscriberState>
+        <SubscriberZip>92071</SubscriberZip>
+        <SubscriberPhone>(619) 444-3147</SubscriberPhone>
+        <SubscriberAccount>gpI9/+Vssf64ZXGJKdcRQQ==</SubscriberAccount>
+        <SubscriberEmail>warehouse@hpionline.com</SubscriberEmail>
+        <BillingAccount>gpI9/+Vssf64ZXGJKdcRQQ==</BillingAccount>
+        <TestEnviroment>False</TestEnviroment>
+        <ProductCode>9A5-U4XI-000E-YDHC-IYI4</ProductCode>
+        <EmployeeID>769391</EmployeeID>
+        <BillingCountry>US</BillingCountry>
+        <SubscriberCountry>US</SubscriberCountry>
+    </Meters>
+</Meters>

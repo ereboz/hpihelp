@@ -1,0 +1,20 @@
+<?xml version="1.0" standalone="yes"?>
+<LTLAccounts>
+  <LTLAccounts>
+    <AccountName>Freight</AccountName>
+    <AccountType>FedExFreight</AccountType>
+    <AccountNumber>8hUD8QyK8GHJOUBvJ8xQjQ==</AccountNumber>
+    <ZipCode>92071</ZipCode>
+    <Address>9316 Wheatlands Rd STE C</Address>
+    <City>SANTEE</City>
+    <State>CA</State>
+    <Contact>Andrew Newmark</Contact>
+    <Company>Hodge Products, Inc.</Company>
+    <Country>US</Country>
+    <ShippingAddressIsDifferent>False</ShippingAddressIsDifferent>
+    <ShipCity>SANTEE</ShipCity>
+    <ShipState>CA</ShipState>
+    <ShipZip>92071</ShipZip>
+    <OldAccountNumber />
+  </LTLAccounts>
+</LTLAccounts>
