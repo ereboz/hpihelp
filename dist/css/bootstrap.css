@@ -6804,17 +6804,17 @@ h5 {
   color: #404040;
 }
 a:link {
-  color: #404040;
+  color: #48c;
   text-decoration: none;
 }
 a:hover {
-  color: #bebebe;
+  color: #ffb31a;
 }
 a:visited {
-  color: #bebebe;
+  color: #e69900;
 }
 a:active {
-  color: #404040;
+  color: blue;
 }
 /* ==========================================================================
 ****** Header Section ******
@@ -6976,17 +6976,17 @@ a:active {
   margin-bottom: 5px;
 }
 .col-hpi [class^="wrapper"] ul li a:link {
-  color: #404040;
+  color: #48c;
   text-decoration: none;
 }
 .col-hpi [class^="wrapper"] ul li a:hover {
-  color: #bebebe;
+  color: #ffb31a;
 }
 .col-hpi [class^="wrapper"] ul li a:visited {
-  color: #404040;
+  color: #e69900;
 }
 .col-hpi [class^="wrapper"] ul li a:active {
-  color: #404040;
+  color: blue;
 }
 .col-hpi [class^="wrapper"] ul a {
   color: #fff;
@@ -7305,7 +7305,7 @@ a:active {
 .shipping-account-info-wrapper .shipping-account-elements .zone-map-image,
 .shipping-wrapper .zone-map-elements .zone-map-image,
 .shipping-account-info-wrapper .zone-map-elements .zone-map-image {
-  margin: 75px 0 25px 0;
+  margin: 50px 0 0 0;
 }
 .shipping-wrapper .shipping-elements .shipping-intro,
 .shipping-account-info-wrapper .shipping-elements .shipping-intro,

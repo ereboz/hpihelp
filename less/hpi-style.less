@@ -44,6 +44,8 @@ unpolluted with (col-md-4 col-lg-6, etc.)
 
 @black: #000;
 @white: #fff;
+@orange: #fa0;
+@blue: #48c;
 
 @gray-light: #bebebe;
 @gray-medium: #a2a2a2;
@@ -101,17 +103,17 @@ h1, h2, h3, h4, h5 {
 
 a {
     &:link {
-        color: @gray-dark;
+        color: @blue;
         text-decoration: none;
     }
     &:hover {
-        color: @gray-light;
+        color: lighten(@orange, 5%);
     }
     &:visited {
-        color: @gray-light;
+        color: darken(@orange, 5%);
     }
     &:active {
-        color: @gray-dark;
+        color: blue;
     }
 }
 
@@ -308,17 +310,17 @@ a {
             margin-bottom: 5px;
             a {
                 &:link {
-                    color: @gray-dark;
+                    color: @blue;
                     text-decoration: none;
                 }
                 &:hover {
-                    color: @gray-light;
+                    color: lighten(@orange, 5%);
                 }
                 &:visited {
-                    color: @gray-dark;
+                    color: darken(@orange, 5%);
                 }
                 &:active {
-                    color: @gray-dark;
+                    color: blue;
                 }
             }
         }
@@ -561,7 +563,7 @@ a {
         }
         
         .zone-map-image {
-            margin: 75px 0 25px 0;
+            margin: 50px 0 0 0;
         }
         
         .shipping-intro {
