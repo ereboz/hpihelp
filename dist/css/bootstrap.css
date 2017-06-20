@@ -6886,11 +6886,11 @@ a:active {
   }
 }
 .subnav-left span:first-of-type {
-  margin-right: -6px;
-  font-weight: 300;
+  margin-right: -3px;
+  font-weight: 700;
 }
 .subnav-left span:last-of-type {
-  font-weight: 700;
+  font-weight: 300;
 }
 .subnav-left a:link {
   color: #fff;
@@ -6927,9 +6927,11 @@ a:active {
 .fa.fa-file-pdf-o,
 .fa.fa-download,
 .fa.fa-file-video-o,
-.fa.fa-file-powerpoint-o {
+.fa.fa-file-powerpoint-o,
+.fa.fa-file-text-o,
+.fa.fa-file-zip-o {
   margin: 0 0 0 5px;
-  font-size: 16px;
+  font-size: 16px !important;
 }
 /* Homepage Main Body Section
 ========================================================================== */
@@ -7154,7 +7156,7 @@ a:active {
 .contact-info-wrapper .resource-elements .key,
 .resource-links-wrapper .resource-elements .key {
   float: left;
-  width: 60%;
+  width: 55%;
   text-align: left;
 }
 .training-wrapper .training-elements .value,
@@ -7167,7 +7169,7 @@ a:active {
 .contact-info-wrapper .resource-elements .value,
 .resource-links-wrapper .resource-elements .value {
   float: left;
-  width: 40%;
+  width: 45%;
   text-align: right;
 }
 /* ==========================================================================
@@ -7244,7 +7246,9 @@ a:active {
 .shipping-wrapper .shipping-elements,
 .shipping-account-info-wrapper .shipping-elements,
 .shipping-wrapper .shipping-account-elements,
-.shipping-account-info-wrapper .shipping-account-elements {
+.shipping-account-info-wrapper .shipping-account-elements,
+.shipping-wrapper .zone-map-elements,
+.shipping-account-info-wrapper .zone-map-elements {
   float: left;
   width: 100%;
   padding: 10px;
@@ -7253,7 +7257,9 @@ a:active {
 .shipping-wrapper .shipping-elements .kv-wrapper,
 .shipping-account-info-wrapper .shipping-elements .kv-wrapper,
 .shipping-wrapper .shipping-account-elements .kv-wrapper,
-.shipping-account-info-wrapper .shipping-account-elements .kv-wrapper {
+.shipping-account-info-wrapper .shipping-account-elements .kv-wrapper,
+.shipping-wrapper .zone-map-elements .kv-wrapper,
+.shipping-account-info-wrapper .zone-map-elements .kv-wrapper {
   float: left;
   width: 100%;
   margin-left: 10px;
@@ -7263,27 +7269,51 @@ a:active {
 .shipping-account-info-wrapper .shipping-elements .key,
 .shipping-wrapper .shipping-account-elements .key,
 .shipping-account-info-wrapper .shipping-account-elements .key,
+.shipping-wrapper .zone-map-elements .key,
+.shipping-account-info-wrapper .zone-map-elements .key,
 .shipping-wrapper .shipping-elements .value,
 .shipping-account-info-wrapper .shipping-elements .value,
 .shipping-wrapper .shipping-account-elements .value,
-.shipping-account-info-wrapper .shipping-account-elements .value {
+.shipping-account-info-wrapper .shipping-account-elements .value,
+.shipping-wrapper .zone-map-elements .value,
+.shipping-account-info-wrapper .zone-map-elements .value {
   font-size: 12px;
 }
 .shipping-wrapper .shipping-elements .key,
 .shipping-account-info-wrapper .shipping-elements .key,
 .shipping-wrapper .shipping-account-elements .key,
-.shipping-account-info-wrapper .shipping-account-elements .key {
+.shipping-account-info-wrapper .shipping-account-elements .key,
+.shipping-wrapper .zone-map-elements .key,
+.shipping-account-info-wrapper .zone-map-elements .key {
   float: left;
-  width: 60%;
+  width: 55%;
   text-align: left;
 }
 .shipping-wrapper .shipping-elements .value,
 .shipping-account-info-wrapper .shipping-elements .value,
 .shipping-wrapper .shipping-account-elements .value,
-.shipping-account-info-wrapper .shipping-account-elements .value {
+.shipping-account-info-wrapper .shipping-account-elements .value,
+.shipping-wrapper .zone-map-elements .value,
+.shipping-account-info-wrapper .zone-map-elements .value {
   float: left;
-  width: 40%;
+  width: 45%;
   text-align: right;
+}
+.shipping-wrapper .shipping-elements .zone-map-image,
+.shipping-account-info-wrapper .shipping-elements .zone-map-image,
+.shipping-wrapper .shipping-account-elements .zone-map-image,
+.shipping-account-info-wrapper .shipping-account-elements .zone-map-image,
+.shipping-wrapper .zone-map-elements .zone-map-image,
+.shipping-account-info-wrapper .zone-map-elements .zone-map-image {
+  margin: 75px 0 25px 0;
+}
+.shipping-wrapper .shipping-elements .shipping-intro,
+.shipping-account-info-wrapper .shipping-elements .shipping-intro,
+.shipping-wrapper .shipping-account-elements .shipping-intro,
+.shipping-account-info-wrapper .shipping-account-elements .shipping-intro,
+.shipping-wrapper .zone-map-elements .shipping-intro,
+.shipping-account-info-wrapper .zone-map-elements .shipping-intro {
+  margin-bottom: 20px;
 }
 /* ==========================================================================
 ****** Footer Section ******
