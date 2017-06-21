@@ -36,26 +36,6 @@ $('#website-select').bind('change', function () { // bind change event to select
 // });
 
 
-
-// $(function(){
-//     $(".M04-Header").load("../../modules/M04-Header/partial.html");
-//     $(".M05-Footer").load("../../modules/M05-Footer/partial.html");
-//
-// });
-
-/**
- * Created by javaBoxer on 5/5/2017.
- */
-// *************** BILL TO/SHIP TO ADDRESS FORM (from checkout page) ***************
-
-// NEED TO MAKE THE ADD NEW SHIPPING, ADD NEW BILLING ADDRESS .container CLASS 50% WIDTH TO REDUCE THE SIZE AND CENTER IT ON SCREEN
-// FOR DESKTOP > 800PX.
-// IT DOES NOT HAVE A UNIQUE CLASS AND SETTING WIDTH ON .container AFFECTS EVERY PAGE ON THE SITE.
-// READ IN THE URL AND APPLY STYLING ONLY TO THE ADDRESS PAGE for SHIPPING/BILLING(address/detail)
-// APPLIES TO:
-// http://a2zhardware.com/address/detail?makePrimary=True&addressType=Shipping&returnurl=%2Fcheckout
-// http://a2zhardware.com/address/detail?makePrimary=True&addressType=Billing&returnurl=%2Fcheckout
-
 $(window).load(function() {
     var loc = window.location.href.toLowerCase();
     var viewportWidth = $(window).width();
