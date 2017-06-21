@@ -9,6 +9,17 @@ $(function(){
     $(".M05-Footer").load("footer.html");
 });
 
+
+$('#website-select').bind('change', function () { // bind change event to select
+    var url = $(this).val(); // get selected value
+    if (url != '') { // require a URL
+        // window.location = url;               // redirect (doesn't open in new window)
+        window.open(url, 'HPI Website');        // redirect opens new window
+    }
+    return false;
+});
+
+
 // $(document).ready(function(){
 //
 //     $(".wrapper-subnav").affix({

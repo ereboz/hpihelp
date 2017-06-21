@@ -6996,17 +6996,20 @@ a:active {
 }
 .topic-heading {
   margin-bottom: 20px;
-  font-size: 24px;
+  font-size: 20px;
   border-bottom: 1px solid black;
 }
 .topic-sub-heading {
   margin-bottom: 20px;
-  font-size: 20px;
+  font-size: 18px;
   border-bottom: 1px dotted #bebebe;
 }
 .page-separator {
   margin-bottom: 40px;
   border-bottom: 1px solid #bebebe;
+}
+.wrapper-form-websites #website-select {
+  width: 100%;
 }
 /* ==========================================================================
 ****** Vendor Section ******
