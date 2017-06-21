@@ -1,5 +1,5 @@
 /**
- * Created by javaBoxer on 5/16/2017.
+ * Created by javaBoxer on 6/20/2017.
  */
 
 // quick load header and footer till we implement a package for fed like
@@ -10,6 +10,7 @@ $(function(){
 });
 
 
+// Homepage - direct the user to the website they chose in the select menu
 $('#website-select').bind('change', function () { // bind change event to select
     var url = $(this).val(); // get selected value
     if (url != '') { // require a URL
@@ -19,6 +20,8 @@ $('#website-select').bind('change', function () { // bind change event to select
     return false;
 });
 
+// ****** Un-comment this when deleted from header.html ******
+// ****** this will live in the header of a template ******
 
 // $(document).ready(function(){
 //
