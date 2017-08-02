@@ -49,6 +49,7 @@ unpolluted with (col-md-4 col-lg-6, etc.)
 @white: #fff;
 @orange: #fa0;
 @blue: #48c;
+@red: #d41;
 
 @gray-light: #bebebe;
 @gray-medium: #a2a2a2;
@@ -261,9 +262,33 @@ a {
 }
 
 // font awesome pdf, download, video, power point, file, zip icon
-.fa.fa-file-pdf-o, .fa.fa-download, .fa.fa-file-video-o, .fa.fa-file-powerpoint-o, .fa.fa-file-text-o, .fa.fa-file-zip-o {
+.fa.fa-file-pdf-o, .fa.fa-download, .fa.fa-file-video-o, .fa.fa-file-powerpoint-o, .fa.fa-file-text-o, .fa.fa-file-zip-o, .fa.fa-file-word-o, .fa-vcard-o {
     font-size: 16px !important;
     margin: 0 0 0 5px;
+}
+
+.fa-file-word-o {
+    color: @blue;
+}
+
+.fa-file-pdf-o {
+    color: @red;
+}
+
+.fa-file-powerpoint-o {
+    color: lighten(@red, 20%);
+}
+
+.fa-file-video-o {
+    color: darken(@blue, 20%);
+}
+
+.fa-download {
+    color: lighten(@blue, 10%);
+}
+
+.fa-file-zip-o {
+    color: darken(@blue, 30%);
 }
 
 //</editor-fold>
@@ -587,6 +612,256 @@ a {
 /* End Shipping Section
 ========================================================================== */
 //</editor-fold>
+
+
+
+
+/* ==========================================================================
+****** Letterhead Section ******
+========================================================================== */
+
+//<editor-fold desc="Letterhead Section">
+
+// look for .page-wrapper and a class with "stationary" in the page wrapper
+// then a "box" to style.
+// the 3 main sections: training, contact-info, resource-links
+.page-wrapper[class*="stationary"] {
+    
+    // applies to div inside main wrappers
+    .box {
+        width: 100%;
+        float: left;
+        border: 1px dotted @gray-light;
+        padding: 10px;
+        margin-bottom: 20px;
+        color: darken(@gray-medium, 20%);
+        background-color: lighten(@gray-light, 24%);
+        overflow: hidden;
+        .rounded-corners();
+        
+        h1, h2, h3, h4, h5 {
+            margin-left: 0;
+        }
+        
+        @media @desktop-min {
+            min-height: 400px;
+        }
+    }
+}
+
+// look for value ending in wrapper inside page-wrapper (this page)
+// each main section and key-value pair wrappers will get this margin
+.page-wrapper {
+    div[class$="wrapper"] {
+        margin-bottom: 20px;
+    }
+}
+
+// ************ Letterhead Wrapper Columns ************
+.letterhead-wrapper {
+    
+    .make-sm-column(4);     // 768px (min)
+    .make-md-column(4);     // 992px (min)
+    //.make-lg-column(2);   // 1200px (min)
+}
+
+// ************ Logo Wrapper Columns ************
+.logo-wrapper {
+    
+    .make-sm-column(4);     // 768px (min)
+    .make-md-column(4);     // 992px (min)
+    //.make-lg-column(2);   // 1200px (min)
+}
+
+// ************ Card Wrapper Columns ************
+.card-wrapper {
+    .make-sm-column(4);     // 768px (min)
+    .make-md-column(4);     // 992px (min)
+    //.make-lg-column(2);   // 1200px (min)
+}
+
+
+
+// ************ Globals for Letterhead, Logo, Card ************
+.letterhead-wrapper, .logo-wrapper, .card-wrapper {
+    
+    @media @desktop-min {
+        min-height: 400px;
+    }
+    
+    .letterhead-elements, .logo-elements, .card-elements {
+        width: 100%;
+        margin: 0 auto;
+        float: left;
+        padding: 10px;
+        
+        .kv-wrapper {
+            float: left;
+            width: 100%;
+            margin-left: 10px;
+            border-bottom: 1px dotted lighten(@gray-light, 10%);
+        }
+        
+        .key, .value {
+            font-size: 12px;
+        }
+        
+        .key {
+            float: left;
+            width: 55%;
+            text-align: left;
+            
+            span {
+            
+            }
+        }
+        
+        .value {
+            float: left;
+            width: 45%;
+            text-align: right;
+    
+            img {
+                float: right;
+            }
+        }
+        
+
+    }
+}
+
+/* End Letterhead Section
+========================================================================== */
+//</editor-fold>
+
+
+
+/* ==========================================================================
+****** Employee Training Section ******
+========================================================================== */
+
+//<editor-fold desc="Employee Training Section">
+
+// look for .page-wrapper and a class with "vendor" in the page wrapper
+// then a "box" to style.
+// the 3 main sections: training, contact-info, resource-links
+.page-wrapper[class*="employee"] {
+    
+    // applies to div inside main wrappers
+    .box {
+        width: 100%;
+        float: left;
+        border: 1px dotted @gray-light;
+        padding: 10px;
+        margin-bottom: 20px;
+        color: darken(@gray-medium, 20%);
+        background-color: lighten(@gray-light, 24%);
+        overflow: hidden;
+        .rounded-corners();
+        
+        h1, h2, h3, h4, h5 {
+            margin-left: 0;
+        }
+        
+        @media @desktop-min {
+            min-height: 400px;
+        }
+    }
+}
+
+// look for value ending in wrapper inside page-wrapper (this page)
+// each main section and key-value pair wrappers
+.page-wrapper {
+    div[class$="wrapper"] {
+        margin-bottom: 20px;
+    }
+}
+
+// ************ Training Wrapper Columns ************
+.ne-safety-training-wrapper {
+    
+    .make-sm-column(5);     // 768px (min)
+    .make-md-column(5);     // 992px (min)
+    //.make-lg-column(2);   // 1200px (min)
+}
+
+// ************ Contact Info Wrapper Columns ************
+.ne-resources-wrapper {
+    
+    .make-sm-column(4);     // 768px (min)
+    .make-md-column(4);     // 992px (min)
+    //.make-lg-column(2);   // 1200px (min)
+}
+
+// ************ Resource Links Wrapper Columns ************
+.ne-quiz-wrapper {
+    .make-sm-column(3);     // 768px (min)
+    .make-md-column(3);     // 992px (min)
+    //.make-lg-column(2);   // 1200px (min)
+}
+
+// ************ Globals for Training, Contact, Resource Links ************
+.ne-safety-training-wrapper, .ne-resources-wrapper, .ne-quiz-wrapper {
+    
+    @media @desktop-min {
+        min-height: 400px;
+    }
+    
+    .ne-safety-training-elements, .ne-resource-elements, .ne-quiz-elements {
+        width: 100%;
+        margin: 0 auto;
+        float: left;
+        padding: 10px;
+        
+        .kv-wrapper {
+            float: left;
+            width: 100%;
+            margin-left: 10px;
+            border-bottom: 1px dotted lighten(@gray-light, 10%);
+        }
+        
+        .key, .value {
+            font-size: 12px;
+        }
+        
+        .key {
+            float: left;
+            width: 55%;
+            text-align: left;
+            
+            span {
+            
+            }
+        }
+        
+        .value {
+            float: left;
+            width: 45%;
+            text-align: right;
+        }
+        
+    }
+}
+/* End Employee Training Section
+========================================================================== */
+
+//</editor-fold>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ==========================================================================
 ****** Footer Section ******

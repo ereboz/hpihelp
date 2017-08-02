@@ -6759,10 +6759,13 @@ button.close {
 /* ==========================================================================
 Bootstrap LESS variables to reference
 
+@screen-xxxs          320px
+@screen-xxs           375px
 @screen-xs             480px;
 @screen-tablet         768px
 @screen-desktop        992px
 @screen-lg-desktop     1200px
+Custom iphone widths if needed:
 
 .make-xs-column = @screen-xs     =  480px;
 .make-sm-column = @screen-sm-min = 768px;
@@ -6929,9 +6932,29 @@ a:active {
 .fa.fa-file-video-o,
 .fa.fa-file-powerpoint-o,
 .fa.fa-file-text-o,
-.fa.fa-file-zip-o {
+.fa.fa-file-zip-o,
+.fa.fa-file-word-o,
+.fa-vcard-o {
   margin: 0 0 0 5px;
   font-size: 16px !important;
+}
+.fa-file-word-o {
+  color: #48c;
+}
+.fa-file-pdf-o {
+  color: #d41;
+}
+.fa-file-powerpoint-o {
+  color: #f38661;
+}
+.fa-file-video-o {
+  color: #245586;
+}
+.fa-download {
+  color: #6ca1d7;
+}
+.fa-file-zip-o {
+  color: #193b5e;
 }
 /* Homepage Main Body Section
 ========================================================================== */
@@ -7175,6 +7198,8 @@ a:active {
   width: 45%;
   text-align: right;
 }
+/* End Vendor Section
+========================================================================== */
 /* ==========================================================================
 ****** Shipping Section ******
 ========================================================================== */
@@ -7318,6 +7343,351 @@ a:active {
 .shipping-account-info-wrapper .zone-map-elements .shipping-intro {
   margin-bottom: 20px;
 }
+/* End Shipping Section
+========================================================================== */
+/* ==========================================================================
+****** Letterhead Section ******
+========================================================================== */
+.page-wrapper[class*="stationary"] .box {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  color: #6f6f6f;
+  background-color: #fbfbfb;
+  border: 1px dotted #bebebe;
+  border-radius: 5px;
+}
+.page-wrapper[class*="stationary"] .box h1,
+.page-wrapper[class*="stationary"] .box h2,
+.page-wrapper[class*="stationary"] .box h3,
+.page-wrapper[class*="stationary"] .box h4,
+.page-wrapper[class*="stationary"] .box h5 {
+  margin-left: 0;
+}
+@media (min-width: 992px) {
+  .page-wrapper[class*="stationary"] .box {
+    min-height: 400px;
+  }
+}
+.page-wrapper div[class$="wrapper"] {
+  margin-bottom: 20px;
+}
+.letterhead-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .letterhead-wrapper {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .letterhead-wrapper {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.logo-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .logo-wrapper {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .logo-wrapper {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.card-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .card-wrapper {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .card-wrapper {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .letterhead-wrapper,
+  .logo-wrapper,
+  .card-wrapper {
+    min-height: 400px;
+  }
+}
+.letterhead-wrapper .letterhead-elements,
+.logo-wrapper .letterhead-elements,
+.card-wrapper .letterhead-elements,
+.letterhead-wrapper .logo-elements,
+.logo-wrapper .logo-elements,
+.card-wrapper .logo-elements,
+.letterhead-wrapper .card-elements,
+.logo-wrapper .card-elements,
+.card-wrapper .card-elements {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+}
+.letterhead-wrapper .letterhead-elements .kv-wrapper,
+.logo-wrapper .letterhead-elements .kv-wrapper,
+.card-wrapper .letterhead-elements .kv-wrapper,
+.letterhead-wrapper .logo-elements .kv-wrapper,
+.logo-wrapper .logo-elements .kv-wrapper,
+.card-wrapper .logo-elements .kv-wrapper,
+.letterhead-wrapper .card-elements .kv-wrapper,
+.logo-wrapper .card-elements .kv-wrapper,
+.card-wrapper .card-elements .kv-wrapper {
+  float: left;
+  width: 100%;
+  margin-left: 10px;
+  border-bottom: 1px dotted #d8d8d8;
+}
+.letterhead-wrapper .letterhead-elements .key,
+.logo-wrapper .letterhead-elements .key,
+.card-wrapper .letterhead-elements .key,
+.letterhead-wrapper .logo-elements .key,
+.logo-wrapper .logo-elements .key,
+.card-wrapper .logo-elements .key,
+.letterhead-wrapper .card-elements .key,
+.logo-wrapper .card-elements .key,
+.card-wrapper .card-elements .key,
+.letterhead-wrapper .letterhead-elements .value,
+.logo-wrapper .letterhead-elements .value,
+.card-wrapper .letterhead-elements .value,
+.letterhead-wrapper .logo-elements .value,
+.logo-wrapper .logo-elements .value,
+.card-wrapper .logo-elements .value,
+.letterhead-wrapper .card-elements .value,
+.logo-wrapper .card-elements .value,
+.card-wrapper .card-elements .value {
+  font-size: 12px;
+}
+.letterhead-wrapper .letterhead-elements .key,
+.logo-wrapper .letterhead-elements .key,
+.card-wrapper .letterhead-elements .key,
+.letterhead-wrapper .logo-elements .key,
+.logo-wrapper .logo-elements .key,
+.card-wrapper .logo-elements .key,
+.letterhead-wrapper .card-elements .key,
+.logo-wrapper .card-elements .key,
+.card-wrapper .card-elements .key {
+  float: left;
+  width: 55%;
+  text-align: left;
+}
+.letterhead-wrapper .letterhead-elements .value,
+.logo-wrapper .letterhead-elements .value,
+.card-wrapper .letterhead-elements .value,
+.letterhead-wrapper .logo-elements .value,
+.logo-wrapper .logo-elements .value,
+.card-wrapper .logo-elements .value,
+.letterhead-wrapper .card-elements .value,
+.logo-wrapper .card-elements .value,
+.card-wrapper .card-elements .value {
+  float: left;
+  width: 45%;
+  text-align: right;
+}
+.letterhead-wrapper .letterhead-elements .value img,
+.logo-wrapper .letterhead-elements .value img,
+.card-wrapper .letterhead-elements .value img,
+.letterhead-wrapper .logo-elements .value img,
+.logo-wrapper .logo-elements .value img,
+.card-wrapper .logo-elements .value img,
+.letterhead-wrapper .card-elements .value img,
+.logo-wrapper .card-elements .value img,
+.card-wrapper .card-elements .value img {
+  float: right;
+}
+/* End Letterhead Section
+========================================================================== */
+/* ==========================================================================
+****** Employee Training Section ******
+========================================================================== */
+.page-wrapper[class*="employee"] .box {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  color: #6f6f6f;
+  background-color: #fbfbfb;
+  border: 1px dotted #bebebe;
+  border-radius: 5px;
+}
+.page-wrapper[class*="employee"] .box h1,
+.page-wrapper[class*="employee"] .box h2,
+.page-wrapper[class*="employee"] .box h3,
+.page-wrapper[class*="employee"] .box h4,
+.page-wrapper[class*="employee"] .box h5 {
+  margin-left: 0;
+}
+@media (min-width: 992px) {
+  .page-wrapper[class*="employee"] .box {
+    min-height: 400px;
+  }
+}
+.page-wrapper div[class$="wrapper"] {
+  margin-bottom: 20px;
+}
+.ne-safety-training-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .ne-safety-training-wrapper {
+    float: left;
+    width: 41.66666667%;
+  }
+}
+@media (min-width: 992px) {
+  .ne-safety-training-wrapper {
+    float: left;
+    width: 41.66666667%;
+  }
+}
+.ne-resources-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .ne-resources-wrapper {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .ne-resources-wrapper {
+    float: left;
+    width: 33.33333333%;
+  }
+}
+.ne-quiz-wrapper {
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media (min-width: 768px) {
+  .ne-quiz-wrapper {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .ne-quiz-wrapper {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  .ne-safety-training-wrapper,
+  .ne-resources-wrapper,
+  .ne-quiz-wrapper {
+    min-height: 400px;
+  }
+}
+.ne-safety-training-wrapper .ne-safety-training-elements,
+.ne-resources-wrapper .ne-safety-training-elements,
+.ne-quiz-wrapper .ne-safety-training-elements,
+.ne-safety-training-wrapper .ne-resource-elements,
+.ne-resources-wrapper .ne-resource-elements,
+.ne-quiz-wrapper .ne-resource-elements,
+.ne-safety-training-wrapper .ne-quiz-elements,
+.ne-resources-wrapper .ne-quiz-elements,
+.ne-quiz-wrapper .ne-quiz-elements {
+  float: left;
+  width: 100%;
+  padding: 10px;
+  margin: 0 auto;
+}
+.ne-safety-training-wrapper .ne-safety-training-elements .kv-wrapper,
+.ne-resources-wrapper .ne-safety-training-elements .kv-wrapper,
+.ne-quiz-wrapper .ne-safety-training-elements .kv-wrapper,
+.ne-safety-training-wrapper .ne-resource-elements .kv-wrapper,
+.ne-resources-wrapper .ne-resource-elements .kv-wrapper,
+.ne-quiz-wrapper .ne-resource-elements .kv-wrapper,
+.ne-safety-training-wrapper .ne-quiz-elements .kv-wrapper,
+.ne-resources-wrapper .ne-quiz-elements .kv-wrapper,
+.ne-quiz-wrapper .ne-quiz-elements .kv-wrapper {
+  float: left;
+  width: 100%;
+  margin-left: 10px;
+  border-bottom: 1px dotted #d8d8d8;
+}
+.ne-safety-training-wrapper .ne-safety-training-elements .key,
+.ne-resources-wrapper .ne-safety-training-elements .key,
+.ne-quiz-wrapper .ne-safety-training-elements .key,
+.ne-safety-training-wrapper .ne-resource-elements .key,
+.ne-resources-wrapper .ne-resource-elements .key,
+.ne-quiz-wrapper .ne-resource-elements .key,
+.ne-safety-training-wrapper .ne-quiz-elements .key,
+.ne-resources-wrapper .ne-quiz-elements .key,
+.ne-quiz-wrapper .ne-quiz-elements .key,
+.ne-safety-training-wrapper .ne-safety-training-elements .value,
+.ne-resources-wrapper .ne-safety-training-elements .value,
+.ne-quiz-wrapper .ne-safety-training-elements .value,
+.ne-safety-training-wrapper .ne-resource-elements .value,
+.ne-resources-wrapper .ne-resource-elements .value,
+.ne-quiz-wrapper .ne-resource-elements .value,
+.ne-safety-training-wrapper .ne-quiz-elements .value,
+.ne-resources-wrapper .ne-quiz-elements .value,
+.ne-quiz-wrapper .ne-quiz-elements .value {
+  font-size: 12px;
+}
+.ne-safety-training-wrapper .ne-safety-training-elements .key,
+.ne-resources-wrapper .ne-safety-training-elements .key,
+.ne-quiz-wrapper .ne-safety-training-elements .key,
+.ne-safety-training-wrapper .ne-resource-elements .key,
+.ne-resources-wrapper .ne-resource-elements .key,
+.ne-quiz-wrapper .ne-resource-elements .key,
+.ne-safety-training-wrapper .ne-quiz-elements .key,
+.ne-resources-wrapper .ne-quiz-elements .key,
+.ne-quiz-wrapper .ne-quiz-elements .key {
+  float: left;
+  width: 55%;
+  text-align: left;
+}
+.ne-safety-training-wrapper .ne-safety-training-elements .value,
+.ne-resources-wrapper .ne-safety-training-elements .value,
+.ne-quiz-wrapper .ne-safety-training-elements .value,
+.ne-safety-training-wrapper .ne-resource-elements .value,
+.ne-resources-wrapper .ne-resource-elements .value,
+.ne-quiz-wrapper .ne-resource-elements .value,
+.ne-safety-training-wrapper .ne-quiz-elements .value,
+.ne-resources-wrapper .ne-quiz-elements .value,
+.ne-quiz-wrapper .ne-quiz-elements .value {
+  float: left;
+  width: 45%;
+  text-align: right;
+}
+/* End Employee Training Section
+========================================================================== */
 /* ==========================================================================
 ****** Footer Section ******
 ========================================================================== */
