@@ -6912,7 +6912,15 @@ a:active {
   margin-top: 7px;
 }
 .subnav-wrapper {
-  height: 30px;
+  min-height: 50px;
+  text-align: right;
+}
+.subnav-wrapper .sub-nav {
+  margin-top: 5px;
+  font-size: 30px;
+}
+.subnav-wrapper .sub-nav .phone-main {
+  color: #fff;
 }
 /* Global Main Body Section
 ========================================================================== */
