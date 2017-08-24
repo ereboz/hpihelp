@@ -6971,8 +6971,7 @@ a:active {
   display: block;
   float: left;
   width: 91.66666667%;
-  height: 530px;
-  min-height: 530px;
+  min-height: 600px !important;
   min-height: 1px;
   padding: 5px;
   padding-right: 15px;
