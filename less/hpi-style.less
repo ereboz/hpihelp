@@ -124,10 +124,10 @@ a {
         text-decoration: none;
     }
     &:hover {
-        color: lighten(@orange, 5%);
+        color: lighten(@blue, 5%);
     }
     &:visited {
-        color: darken(@orange, 5%);
+        color: darken(@blue, 5%);
     }
     &:active {
         color: blue;
@@ -364,10 +364,10 @@ a {
                     text-decoration: none;
                 }
                 &:hover {
-                    color: lighten(@orange, 5%);
+                    color: lighten(@blue, 5%);
                 }
                 &:visited {
-                    color: darken(@orange, 5%);
+                    color: darken(@blue, 5%);
                 }
                 &:active {
                     color: blue;
@@ -380,6 +380,37 @@ a {
             &:hover {
                 color: @gray-dark;
             }
+        }
+    }
+}
+
+
+// column heading
+// deviated from usual li and had to add other elements for fa icons options
+.wrapper-hodge-data {
+   ul {
+       &.common-forms-wrapper {
+            float: left;
+           font-size: 13px;
+           width: 100%;
+           
+           li {
+               height: 18px;
+           }
+       }
+    }
+    
+    .common-forms {
+        width: 100%;
+
+        
+        span:first-child {
+            width: 70%;
+            float: left;
+        }
+        span:last-child {
+            width: 30%;
+            float: right;
         }
     }
 }
@@ -868,22 +899,6 @@ a {
 ========================================================================== */
 
 //</editor-fold>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
 ****** Footer Section ******

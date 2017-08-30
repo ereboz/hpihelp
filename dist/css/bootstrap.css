@@ -6811,10 +6811,10 @@ a:link {
   text-decoration: none;
 }
 a:hover {
-  color: #ffb31a;
+  color: #5895d1;
 }
 a:visited {
-  color: #e69900;
+  color: #357bc2;
 }
 a:active {
   color: blue;
@@ -7010,10 +7010,10 @@ a:active {
   text-decoration: none;
 }
 .col-hpi [class^="wrapper"] ul li a:hover {
-  color: #ffb31a;
+  color: #5895d1;
 }
 .col-hpi [class^="wrapper"] ul li a:visited {
-  color: #e69900;
+  color: #357bc2;
 }
 .col-hpi [class^="wrapper"] ul li a:active {
   color: blue;
@@ -7023,6 +7023,25 @@ a:active {
 }
 .col-hpi [class^="wrapper"] ul a:hover {
   color: #404040;
+}
+.wrapper-hodge-data ul.common-forms-wrapper {
+  float: left;
+  width: 100%;
+  font-size: 13px;
+}
+.wrapper-hodge-data ul.common-forms-wrapper li {
+  height: 18px;
+}
+.wrapper-hodge-data .common-forms {
+  width: 100%;
+}
+.wrapper-hodge-data .common-forms span:first-child {
+  float: left;
+  width: 70%;
+}
+.wrapper-hodge-data .common-forms span:last-child {
+  float: right;
+  width: 30%;
 }
 .topic-heading {
   margin-bottom: 20px;
