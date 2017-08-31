@@ -7024,23 +7024,28 @@ a:active {
 .col-hpi [class^="wrapper"] ul a:hover {
   color: #404040;
 }
-.wrapper-hodge-data ul.common-forms-wrapper {
+.wrapper-hodge-data ul.common-forms-wrapper,
+.wrapper-vendor ul.common-forms-wrapper {
   float: left;
   width: 100%;
   font-size: 13px;
 }
-.wrapper-hodge-data ul.common-forms-wrapper li {
+.wrapper-hodge-data ul.common-forms-wrapper li,
+.wrapper-vendor ul.common-forms-wrapper li {
   height: 18px;
 }
-.wrapper-hodge-data .common-forms {
+.wrapper-hodge-data .common-forms,
+.wrapper-vendor .common-forms {
   width: 100%;
 }
-.wrapper-hodge-data .common-forms span:first-child {
+.wrapper-hodge-data .common-forms span:first-child,
+.wrapper-vendor .common-forms span:first-child {
   float: left;
   width: 70%;
 }
-.wrapper-hodge-data .common-forms span:last-child {
-  float: right;
+.wrapper-hodge-data .common-forms span:last-child,
+.wrapper-vendor .common-forms span:last-child {
+  float: left;
   width: 30%;
 }
 .topic-heading {
